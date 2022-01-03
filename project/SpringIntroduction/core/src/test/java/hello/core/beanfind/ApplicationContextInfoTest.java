@@ -6,13 +6,14 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class ApplicationContextInfoTest {
+//컨테이너에 등록된 모든 빈 조회
+class ApplicationContextInfoTest {
 
     AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
 
     @Test
     @DisplayName("모든 빈 출력하기")
-    void findAllBean() { //Junit5부터는 public 설정 안해도 된다.
+    void findAllBean() { //Spring 내부 빈 객체까지 모두 출력
         String[] beanDefinitionNames = ac.getBeanDefinitionNames();
 
         for (String beanDefinitionName : beanDefinitionNames) {
@@ -24,7 +25,7 @@ public class ApplicationContextInfoTest {
 
     @Test
     @DisplayName("애플리케이션 빈 출력하기")
-    void findApplicationBean() { //Junit5부터는 public 설정 안해도 된다.
+    void findApplicationBean() { // 내가 등록한 빈 출력
         String[] beanDefinitionNames = ac.getBeanDefinitionNames();
 
         for (String beanDefinitionName : beanDefinitionNames) {
