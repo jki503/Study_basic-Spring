@@ -1,7 +1,7 @@
 ---
 title: "스프링 핵심 원리 이해2 - 객체 지향 원리 적용"
 category: basic-Spring
-tags: [Spring Container, Spring Bean]
+tags: [AppConfig, DI, IOC]
 Author: Jung
 ---
 

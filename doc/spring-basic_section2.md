@@ -1,7 +1,7 @@
 ---
 title: "[section2] 스프링 핵심 원리 이해1]"
 category: basic-Spring
-tags: [Spring Container, Spring Bean]
+tags: [Spring, project ver]
 Author: Jung
 ---
 
