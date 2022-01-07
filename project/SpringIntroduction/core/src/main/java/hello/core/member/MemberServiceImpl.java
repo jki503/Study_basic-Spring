@@ -1,7 +1,6 @@
 package hello.core.member;
 
 public class MemberServiceImpl implements MemberService{
-//  private final MemberRepository memberRepository = new MemoryMemberRepository();
     private final MemberRepository memberRepository; // 인터페이스만 존재하여 추상화에만 의존. DIP를 지키는 것.
 
     public MemberServiceImpl(MemberRepository memberRepository) {
@@ -17,5 +16,10 @@ public class MemberServiceImpl implements MemberService{
     @Override
     public Member findMember(Long memberId) {
         return memberRepository.findById(memberId);
+    }
+
+    //테스트 용도
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
     }
 }
