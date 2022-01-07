@@ -1,5 +1,5 @@
 ---
-title: "[OT]
+title: "[OT] 강의소개"
 category: basic-Spring
 tags: [Spring Container, Spring Bean]
 Author: Jung
