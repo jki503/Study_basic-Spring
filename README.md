@@ -4,7 +4,7 @@
 
 ## Table of contents
 
-0. [OT](./doc/spring-basic-core_ot.md)
+0. [OT](./doc/spring-basic_ot.md)
 1. [객체지향 설계와 스프링](./doc/spring-basic_section1.md)
 2. [스프링 핵심 원리 이해1 -예제만들기](./doc/spring-basic_section2.md)
 3. [스프링 핵심 원리 이해2 - 객체 지향 원리 적용](./doc/spring-basic_section3.md)
