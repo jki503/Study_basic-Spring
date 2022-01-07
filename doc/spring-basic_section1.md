@@ -1,7 +1,7 @@
 ---
 title: "[section1] 객체 지향 설계와 스프링"
 category: basic-Spring
-tags: [Spring Container, Spring Bean]
+tags: [객체 지향, 다형성]
 Author: Jung
 ---
 
