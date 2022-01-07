@@ -1,6 +1,6 @@
 # Study_basic-Spring
 
-[Studying "Spring FrameWork basic core" by inf-Learn(https://www.inflearn.com/course/스프링-핵심-원리-기본편)]
+[Studying "Spring FrameWork basic core" by inf-Learn](https://www.inflearn.com/course/스프링-핵심-원리-기본편)
 
 ## Table of contents
 
