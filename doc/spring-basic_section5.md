@@ -129,14 +129,3 @@ public class AppConfig {
 
 > @Bean만 사용해도 스프링 빈 등록, but 싱글톤 보장 x
 > @Configuration은 싱글톤을 위해 존재.
-
-@Configuration은 singleton을 위해존재
-
-@Bean memberService -> new MemoryMemberRepository() 생성
-@Bean orderService -> new MemoryMemberRepository()
-
-두 번 생성되면 singleton이 깨지는 것 아닌가! new가 두 번인데?
-
-CGLIB 내가 만든 클래스가 아니라 스프링이 바이트 조작 라이브러리 사용
--> AppConfig 클래스 상속받은 임의의 다른 클래스를 만들고
--> 그 생성된 클래스(AppConfig@CGLIB)를 스프링 빈으로 등록한 것.
