@@ -12,31 +12,6 @@ import hello.core.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/* Before Spring
-public class AppConfig {
-    public MemberService memberService(){
-        // before refactoring
-        // return new MemberServiceImpl(new MemoryMemberRepository()); // 이때 class가 들어, 생성자 주입.
-        return new MemberServiceImpl(memberRepository()); // 이때 class가 들어, 생성자 주입.
-
-    }
-
-    public MemberRepository memberRepository() { // 예를 들어 DB 정책이 바뀔 경우 이 코드만 수정하면 된다.
-        return new MemoryMemberRepository();
-    }
-
-    public OrderService orderService(){
-        //before refactoring
-        return new OrderServiceImpl(memberRepository(), discountPolicy());
-    }
-
-    public DiscountPolicy discountPolicy(){
-//      return new FixDiscountPolicy();
-        return new RateDiscountPolicy();
-    }
-}*/
-
-//migration to Spring
 @Configuration
 public class AppConfig {
 
@@ -54,7 +29,6 @@ public class AppConfig {
 
     @Bean
     public OrderService orderService(){
-        //before refactoring
         System.out.println("call AppConfig.orderService");
         return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
